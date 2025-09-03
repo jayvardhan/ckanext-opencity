@@ -1,61 +1,17 @@
-import ckan.plugins as plugins
+# encoding: utf-8
+
+from ckan.plugins import implements, SingletonPlugin
+from ckan.plugins import IConfigurer
 import ckan.plugins.toolkit as toolkit
+import os
 
-
-# import ckanext.opencity.cli as cli
-# import ckanext.opencity.helpers as helpers
-# import ckanext.opencity.views as views
-# from ckanext.opencity.logic import (
-#     action, auth, validators
-# )
-
-
-class OpencityPlugin(plugins.SingletonPlugin):
-    plugins.implements(plugins.IConfigurer)
-    
-    # plugins.implements(plugins.IAuthFunctions)
-    # plugins.implements(plugins.IActions)
-    # plugins.implements(plugins.IBlueprint)
-    # plugins.implements(plugins.IClick)
-    # plugins.implements(plugins.ITemplateHelpers)
-    # plugins.implements(plugins.IValidators)
-    
-
-    # IConfigurer
+class OpencityPlugin(SingletonPlugin):
+    implements(IConfigurer)
 
     def update_config(self, config_):
-        toolkit.add_template_directory(config_, "templates")
-        toolkit.add_public_directory(config_, "public")
-        toolkit.add_resource("assets", "opencity")
+        # Get root directory of the plugin
+        root_path = os.path.dirname(__file__)
 
-    
-    # IAuthFunctions
-
-    # def get_auth_functions(self):
-    #     return auth.get_auth_functions()
-
-    # IActions
-
-    # def get_actions(self):
-    #     return action.get_actions()
-
-    # IBlueprint
-
-    # def get_blueprint(self):
-    #     return views.get_blueprints()
-
-    # IClick
-
-    # def get_commands(self):
-    #     return cli.get_commands()
-
-    # ITemplateHelpers
-
-    # def get_helpers(self):
-    #     return helpers.get_helpers()
-
-    # IValidators
-
-    # def get_validators(self):
-    #     return validators.get_validators()
-    
+        # Add public and template folders
+        toolkit.add_template_directory(config_, os.path.join(root_path, 'templates'))
+        toolkit.add_public_directory(config_, os.path.join(root_path, 'public'))

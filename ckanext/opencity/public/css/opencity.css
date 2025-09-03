@@ -1,0 +1,20 @@
+.masthead {
+  background-color: #fff;
+}
+
+.masthead .navbar .logo img {
+  width: 100%;
+  height: auto;
+  max-height: 60px;
+  max-width: 200px;
+}
+
+.masthead .main-navbar ul li a {
+  color: #000;
+}
+
+.masthead .main-navbar ul li:hover a,
+.masthead .main-navbar ul li:focus a,
+.masthead .main-navbar ul li.active a {
+  color: #fff;
+}

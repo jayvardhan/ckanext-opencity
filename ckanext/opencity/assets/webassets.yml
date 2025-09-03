@@ -1,0 +1,14 @@
+# opencity-js:
+#   filter: rjsmin
+#   output: ckanext-opencity/%(version)s-opencity.js
+#   contents:
+#     - js/opencity.js
+#   extra:
+#     preload:
+#       - base/main
+
+# opencity-css:
+#   filter: cssrewrite
+#   output: ckanext-opencity/%(version)s-opencity.css
+#   contents:
+#     - css/opencity.css

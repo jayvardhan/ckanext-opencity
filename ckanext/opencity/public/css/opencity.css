@@ -18,3 +18,71 @@
 .masthead .main-navbar ul li.active a {
   color: #fff;
 }
+
+
+.site-footer {
+  color: rgb(200, 229, 55);
+  background-color: #000;
+  font-size: 17px;
+}
+
+.site-footer .footer-wrapper {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.footer-left {
+  font-size: 1.25rem;
+  display: flex-col;
+}
+
+.footer-left img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.footer-left .substack-btn {
+  display: inline-block;
+  margin-top: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 700;
+  padding: 16px 36px;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  color: #000;
+  background-color: #d33a4c;
+}
+
+.footer-middle {
+  padding-top: 30px;
+}
+
+.footer-middle a {
+  color: rgb(200, 229, 55);
+  display: inline-block;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.footer-right {
+  font-size: 21px;
+  padding-top: 30px;
+}
+
+.footer-right img {
+  width: 256px;
+  max-width: 100%;
+}
+
+.footer-right .attribution {
+  margin-top: 40px;
+  font-size: 14px;
+  color:#fff;
+}
+
+.footer-right .attribution a {
+  color: #fff;
+}

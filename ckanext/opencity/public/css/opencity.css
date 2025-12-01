@@ -20,6 +20,16 @@
 }
 
 
+.module-promotion .page-heading {
+  margin-bottom: 20px;
+}
+
+
+.module-promotion a svg{
+ width:15px;
+}
+
+
 .site-footer {
   color: rgb(200, 229, 55);
   background-color: #000;

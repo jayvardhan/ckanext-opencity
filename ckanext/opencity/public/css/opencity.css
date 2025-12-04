@@ -1,3 +1,20 @@
+.account-masthead {
+  background-color: #426133;
+}
+
+.account-masthead .account ul li a {
+  color: #fff;
+}
+
+.account-masthead .account .notifications a span.badge {
+  color: #fff;
+  background-color: #000;
+}
+
+.fa-sign-out {
+  color: #fff;
+}
+
 .masthead {
   background-color: #fff;
 }
@@ -13,12 +30,27 @@
   color: #000;
 }
 
+.masthead .main-navbar ul li:hover a {
+  color: #fff;
+  background-color: #a62635;
+  border: 1px solid #d63449;
+  box-shadow: inset 0 1px 0 #d63449;
+}
+
+.masthead .main-navbar ul li:focus a, .masthead .main-navbar ul li.active a {
+  color: #fff;
+  background-color: #a62635;
+}
+
 .masthead .main-navbar ul li:hover a,
 .masthead .main-navbar ul li:focus a,
 .masthead .main-navbar ul li.active a {
   color: #fff;
 }
 
+.navbar-toggler .text-white {
+  color: #777!important;
+}
 
 .module-promotion .page-heading {
   margin-bottom: 20px;
@@ -29,6 +61,19 @@
  width:15px;
 }
 
+.homepage .module-search .search-form {
+  background-color: #a62635;
+}
+
+.homepage .module-search .tags {
+  background-color: #000;
+}
+
+a.tag:hover {
+  background-color: #a62635;
+  border: 1px solid #d63449;
+  box-shadow: inset 0 1px 0 #d63449;
+}
 
 .site-footer {
   color: rgb(200, 229, 55);

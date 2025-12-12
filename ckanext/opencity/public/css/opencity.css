@@ -1,3 +1,23 @@
+.btn-primary, .btn-success {
+    color: #fff;
+    background-color: #405e31;
+    border-color: #405e31;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.btn-primary:active, .btn-primary:hover {
+    color: #fff;
+    background-color: #405e31;
+    border-color: #405e31;
+}
+
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: #405e31;
+    border-color: #405e31;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.25rem rgb(153 169 145);
+}
+
 .account-masthead {
   background-color: #426133;
 }
@@ -83,7 +103,7 @@ a.tag:hover {
 
 .site-footer .footer-wrapper {
   padding-top: 70px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .footer-left {

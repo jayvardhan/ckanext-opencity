@@ -1,0 +1,24 @@
+{#
+  Displays a sidebard module with information about group.
+
+  group_type    - The type of group.
+
+  Example:
+
+  {% snippet "group/snippets/helper.html", group_type=group_type %}
+
+  #}
+
+<div class="module module-narrow module-shallow">
+  <h2 class="module-heading">
+    <i class="fa fa-info-circle"></i>
+    {{ _('Cities') }}
+  </h2>
+  <div class="module-content">
+    <p>
+      {% trans %}
+        Datasets grouped by major cities in India. Data for smaller cities are grouped under Others.
+      {% endtrans %}
+    </p>
+  </div>
+</div>
